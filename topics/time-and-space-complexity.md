@@ -243,6 +243,15 @@ int main() {
 }
 ```
 
+#### 8. O(√n) – Square Root Time Complexity
+- The number of steps grows with the square root of the input size.
+- Example:
+  - If input n = 100 → about 10 steps.
+  - If input n = 10,000 → about 100 steps.
+- Common Example:
+  - Checking if a number is prime (we only need to check divisibility up to √n).
+  - O(√n) means the work increases with the square root of the input size.
+
 ---
 
 ## 2. What is Space Complexity?
@@ -359,3 +368,4 @@ int main() {
 | O(n²)      | Quadratic    | Bubble Sort, Insertion Sort |
 | O(2^n)     | Exponential  | Recursive Fibonacci         |
 | O(n!)      | Factorial    | Traveling Salesman (brute)  |
+
