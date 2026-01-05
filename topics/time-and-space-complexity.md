@@ -1,13 +1,16 @@
 x# Time and Space Complexity
 
 ## 1. What is Time Complexity?
+
 Time complexity is a way to measure how much time an algorithm takes with respect to the size of input.
+
 - Input size is usually represented as n.
 - We do not calculate exact seconds, instead we calculate the growth rate (how fast the time increases as input grows).
 
 ### Common Time Complexities
 
 #### 1. O(1) – Constant Time
+
 - Execution time does not depend on input size.
 - Example: Accessing an array element arr[5].
 
@@ -26,6 +29,7 @@ int main() {
 ```
 
 #### 2. O(log n) – Logarithmic Time
+
 - Time increases slowly even if input size grows a lot.
 - Example: Binary Search.
 
@@ -70,6 +74,7 @@ int main() {
 ```
 
 #### 3. O(n) – Linear Time
+
 - Time grows directly proportional to input size.
 - Example: Traversing an array.
 
@@ -93,6 +98,7 @@ int main() {
 ```
 
 #### 4. O(n log n) – Linearithmic Time
+
 - Better than quadratic but slower than linear.
 - Example: Merge Sort, Quick Sort (average case).
 
@@ -153,6 +159,7 @@ int main() {
 ```
 
 #### 5. O(n²) – Quadratic Time
+
 - Time grows very fast with input size.
 - Example: Nested loops (Bubble Sort, Insertion Sort).
 
@@ -186,8 +193,8 @@ int main() {
 }
 ```
 
-
 #### 6. O(2^n) – Exponential Time
+
 - Extremely slow, doubles with each additional input.
 - Example: Recursive Fibonacci without dynamic programming.
 
@@ -216,6 +223,7 @@ int main() {
 ```
 
 #### 7. O(n!) – Factorial Time
+
 - Worst growth rate.
 - Example: Solving Traveling Salesman problem by brute force.
 
@@ -244,6 +252,7 @@ int main() {
 ```
 
 #### 8. O(√n) – Square Root Time Complexity
+
 - The number of steps grows with the square root of the input size.
 - Example:
   - If input n = 100 → about 10 steps.
@@ -255,11 +264,13 @@ int main() {
 ---
 
 ## 2. What is Space Complexity?
+
 Space complexity measures how much memory (RAM) an algorithm needs while executing.
 <br/>
 <br/>
 
 It includes:
+
 1. Fixed Part – Memory for constants, program instructions.
 2. Variable Part – Memory for variables, arrays, data structures.
 3. Recursive Stack – Extra memory due to recursion calls.
@@ -267,6 +278,7 @@ It includes:
 ### Common Space Complexities
 
 #### 1. O(1) – Constant space
+
 - No extra memory except a few variables.
 - Example: Swapping two variables.
 
@@ -289,6 +301,7 @@ int main() {
 ```
 
 #### 2. O(n) – Linear space
+
 - Memory grows with input size.
 - Example: Storing an array, recursion depth = n.
 
@@ -315,6 +328,7 @@ int main() {
 ```
 
 #### 3. O(log n) – Logarithmic space
+
 - Memory grows slowly with input.
 - Example: Recursive Binary Search.
 
@@ -354,11 +368,13 @@ int main() {
 ```
 
 ### 3. Why Do We Use Complexity Analysis?
+
 - To predict performance before coding.
 - To compare two algorithms solving the same problem.
 - To avoid code that becomes too slow or memory-heavy for large inputs.
 
 ### 4. Quick Table
+
 | Complexity | Name         | Example                     |
 | ---------- | ------------ | --------------------------- |
 | O(1)       | Constant     | Accessing array element     |
@@ -368,4 +384,3 @@ int main() {
 | O(n²)      | Quadratic    | Bubble Sort, Insertion Sort |
 | O(2^n)     | Exponential  | Recursive Fibonacci         |
 | O(n!)      | Factorial    | Traveling Salesman (brute)  |
-
